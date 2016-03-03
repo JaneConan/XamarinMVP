@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="BaseUrl">172.16.101.7:99/MUser</string>
+  <string name="Login">Login</string>
+</resources>
