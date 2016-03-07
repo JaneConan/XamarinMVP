@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using MvpLogoin.Model.Impl;
 using MvpLogoin.Model.Mod;
+using NSACL.PullToRefreshData;
 
 namespace MvpLogoin.Model.Net
 {
@@ -24,5 +25,6 @@ namespace MvpLogoin.Model.Net
             String BaseUrl = GetUrl(Resource.String.Login);
             return Http.PostJson<LoginIn, PullDownResult>(BaseUrl, new LoginIn() { UserName = UserName, PassWord = Password });
         }
+       
     }
 }

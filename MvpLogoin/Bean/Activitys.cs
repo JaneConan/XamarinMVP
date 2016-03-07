@@ -12,11 +12,8 @@ using Android.Widget;
 
 namespace MvpLogoin.Bean
 {
-    public class User
+    public class Activitys
     {
-        public String Username { get; set; }
-        public String Password { get; set; }
-        public String UserRole { get; set; }
 
     }
 }

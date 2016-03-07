@@ -61,19 +61,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActivityList.cs" />
+    <Compile Include="Bean\Activitys.cs" />
     <Compile Include="Bean\User.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Model\Interface\IActivity.cs" />
+    <Compile Include="Model\Impl\ActivityImpl.cs" />
     <Compile Include="Model\Mod\Login.cs" />
     <Compile Include="Model\Mod\PullDown.cs" />
     <Compile Include="Model\Impl\UserImpl.cs" />
-    <Compile Include="Model\IUser.cs" />
+    <Compile Include="Model\Interface\IUser.cs" />
+    <Compile Include="Model\Net\ActivityNet.cs" />
     <Compile Include="Model\Net\BaseNet.cs" />
     <Compile Include="Model\Net\UserNet.cs" />
-    <Compile Include="Model\OnLoginListener.cs" />
+    <Compile Include="Model\Listener\OnGetActivityListener.cs" />
+    <Compile Include="Model\Listener\OnLoginListener.cs" />
+    <Compile Include="Presenter\GetActivityPresenter.cs" />
     <Compile Include="Presenter\UserLoginPresenter.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\IActivityView.cs" />
     <Compile Include="Views\ILoginView.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +89,12 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\Login.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\List.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Item.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

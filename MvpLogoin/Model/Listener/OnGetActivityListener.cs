@@ -9,14 +9,14 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using MvpLogoin.Model.Impl;
 
-namespace MvpLogoin.Bean
+namespace MvpLogoin.Model.Listener
 {
-    public class User
+    public interface OnGetActivityListener
     {
-        public String Username { get; set; }
-        public String Password { get; set; }
-        public String UserRole { get; set; }
 
+        void GetSuccess(MyAdapter name);
+        void GetFailed();
     }
 }

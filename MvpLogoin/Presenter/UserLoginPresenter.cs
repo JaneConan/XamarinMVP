@@ -13,6 +13,8 @@ using MvpLogoin.Model;
 using MvpLogoin.Views;
 using MvpLogoin.Model.Impl;
 using MvpLogoin.Bean;
+using MvpLogoin.Model.Interface;
+using MvpLogoin.Model.Listener;
 
 namespace MvpLogoin.Presenter
 {

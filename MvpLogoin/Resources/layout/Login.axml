@@ -6,11 +6,13 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/username" />
+        android:id="@+id/username"
+        android:text="xsyhzty" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/password" />
+        android:id="@+id/password"
+        android:text="123456" />
     <Button
         android:text="登录"
         android:layout_width="match_parent"

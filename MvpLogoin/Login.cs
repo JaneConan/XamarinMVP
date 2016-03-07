@@ -51,7 +51,6 @@ namespace MvpLogoin
         {
             mUserLoginPresenter.Login();
         }
-
         public string GetPassword()
         {
             return mEtPassword.Text.ToString();
@@ -71,7 +70,8 @@ namespace MvpLogoin
         public void ToMainActivity(User user)
         {
             Intent intent = new Intent(this, typeof(MainActivity));
-            intent.PutExtra("user", user.GetUserRole());
+            //intent.PutExtra("user", user.GetUserRole());
+            intent.PutExtra("user", user.UserRole);
             StartActivity(intent);
         }
         public void ShowFailed()

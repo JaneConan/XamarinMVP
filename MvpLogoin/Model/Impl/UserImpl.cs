@@ -15,6 +15,9 @@ using MvpLogoin.Model.Net;
 using MvpLogoin.Model.Mod;
 using MvpLogoin.Bean;
 
+using MvpLogoin.Model.Interface;
+using MvpLogoin.Model.Listener;
+
 namespace MvpLogoin.Model.Impl
 {
     public class UserImpl : UserNet, IUser
@@ -31,7 +34,7 @@ namespace MvpLogoin.Model.Impl
                     if (isOk.Type == ResultType.Success)
                     {
                         User user = new User();
-                        user.SetUserRole(isOk.ErrorMsg);
+                        user.UserRole = isOk.ErrorMsg;
                         loginListener.LoginSuccess(user);
                     }
                     else

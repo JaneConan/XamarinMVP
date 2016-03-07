@@ -9,14 +9,13 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using MvpLogoin.Model.Mod;
+using MvpLogoin.Model.Listener;
 
-namespace MvpLogoin.Bean
+namespace MvpLogoin.Model.Interface
 {
-    public class User
+    public interface IActivity
     {
-        public String Username { get; set; }
-        public String Password { get; set; }
-        public String UserRole { get; set; }
-
+        void GetActivitiesData(PullDownRequest postData, OnGetActivityListener activityListener);
     }
 }
